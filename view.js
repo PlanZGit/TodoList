@@ -64,3 +64,5 @@ function render_isEditing(id) {
   list.appendChild(cancelButton);
   list.appendChild(updateButton);
 }
+
+render();

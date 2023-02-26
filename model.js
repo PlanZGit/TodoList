@@ -3,6 +3,7 @@ let todos;
 
 //Retrieve localStorage
 const savedTodos = JSON.parse(localStorage.getItem("todos"));
+
 //Check if array
 if (Array.isArray(savedTodos)) {
   todos = savedTodos;
@@ -53,6 +54,7 @@ function createToDo(title, dueDate) {
 
   saveToDo();
 }
+
 //Deletes a todo
 function removeTodo(idToDelete) {
   //filter return array with filters remove
@@ -64,6 +66,7 @@ function removeTodo(idToDelete) {
       return true;
     }
   });
+
   saveToDo();
 }
 //Save todo checkbox
@@ -73,6 +76,7 @@ const setCheckBox = (idCheckBox, isChecked) => {
       todo.isDone = isChecked;
     }
   });
+
   saveToDo();
 };
 
@@ -95,5 +99,3 @@ function updateTodo(id, title, date) {
     }
   });
 }
-
-render();
