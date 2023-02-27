@@ -1,0 +1,38 @@
+.todo-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  margin-top: 35vh;
+}
+
+.todo-section > * {
+  width: 400px;
+}
+
+.input-todo {
+  display: flex;
+}
+
+.todoList-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-container,
+.input-todo > * {
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.input-todo input {
+  flex: 3;
+}
+
+.input-todo button {
+  flex: 1;
+}

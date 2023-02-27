@@ -18,17 +18,19 @@ function render() {
     editButton.id = todo.id;
     editButton.onclick = editButtonFunc;
 
-    let element = document.createElement("div");
+    let container = document.createElement("div");
+    container.className = "todo-container";
+
     let deleteButton = document.createElement("button");
     deleteButton.innerText = "Delete";
     deleteButton.onclick = onDelete(todo);
     //deleteButton.id = todo.id
-    element.innerText = todo.title + " " + todo.date;
+    container.innerText = todo.title + " " + todo.date;
 
-    element.appendChild(editButton);
-    element.prepend(checkBox);
-    element.appendChild(deleteButton);
-    list.appendChild(element);
+    container.appendChild(editButton);
+    container.prepend(checkBox);
+    container.appendChild(deleteButton);
+    list.appendChild(container);
   });
 }
 
@@ -41,7 +43,7 @@ function render_isEditing(id) {
 
   let textInput = document.createElement("input");
   textInput.type = "text";
-  textInput.placeholder = "new todo name";
+  textInput.placeholder = "Rename todo";
   textInput.id = "update-input-title";
 
   let dateInput = document.createElement("input");
