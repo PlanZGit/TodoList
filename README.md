@@ -2,6 +2,16 @@
 
 Visit https://planzgit.github.io/TodoList/
 
+# Working on :
+
+1. Splite code into MVC - done
+
+2. Save and Load/Retrieve data - reviewing
+
+3. Selectable and draggable - searching
+
+4. Style - proccessing
+
 IMPORTANT :
 
     Todos data :
@@ -14,13 +24,3 @@ IMPORTANT :
 - **Model** - Contains all code that saves and manages data
 - **View** - Contains all code that manages visuals. Render visuals using data in the model
 - **Control** - Connects model and veiw. Response to events from view(button clicks). Tells the model to update its data (and the view to re-render)
-
-# Working on :
-
-1. Splite code into MVC - done
-
-2. Save and Load/Retrieve data - reviewing
-
-3. Selectable and draggable - searching
-
-4. Style - proccessing
