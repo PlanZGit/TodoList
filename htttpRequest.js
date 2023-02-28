@@ -47,4 +47,17 @@ function createTableData(data) {
   });
 
   dataSection.append(table);
+  document.getElementById("get-data").innerHTML = "";
+  document.getElementById("close-data-button").style.visibility = "visible";
+}
+
+function closeData() {
+  let button = document.getElementById("close-data-button");
+  if (button.innerText === "Open") {
+    button.innerText = "Close";
+    document.getElementById("data-section").style.visibility = "visible";
+  } else {
+    button.innerText = "Open";
+    document.getElementById("data-section").style.visibility = "hidden";
+  }
 }

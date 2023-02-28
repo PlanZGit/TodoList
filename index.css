@@ -3,7 +3,7 @@ body {
 }
 
 button {
-  border: 2px outset rgb(0, 0, 0);
+  border: 1px outset rgb(0, 0, 0);
   border-radius: 2px;
 }
 
@@ -26,10 +26,6 @@ button:focus {
   width: 400px;
 }
 
-.input-todo {
-  display: flex;
-}
-
 .todoList-container {
   display: flex;
   flex-direction: column;
@@ -41,7 +37,9 @@ button:focus {
   background-color: white;
   margin-top: 5px;
   padding: 10px;
-  border: 2px outset rgb(236, 236, 236);
+  border: 4px outset rgb(236, 236, 236);
+  border-left: 2px outset rgb(0, 0, 0);
+  border-bottom: 2px outset rgb(0, 0, 0);
   border-radius: 5px;
 }
 
@@ -57,9 +55,20 @@ button:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+.todo-container div:nth-child(3) {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2px;
 }
 
 .input-todo {
+  display: flex;
   /* margin-left: 3px; */
   gap: 2px;
 }
