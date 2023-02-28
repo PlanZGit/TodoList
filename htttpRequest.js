@@ -48,16 +48,16 @@ function createTableData(data) {
 
   dataSection.append(table);
   document.getElementById("get-data").innerHTML = "";
-  document.getElementById("close-data-button").style.visibility = "visible";
+  document.getElementById("close-data-button").style.display = "block";
 }
 
 function closeData() {
   let button = document.getElementById("close-data-button");
   if (button.innerText === "Open") {
     button.innerText = "Close";
-    document.getElementById("data-section").style.visibility = "visible";
+    document.getElementById("data-section").style.display = "block";
   } else {
     button.innerText = "Open";
-    document.getElementById("data-section").style.visibility = "hidden";
+    document.getElementById("data-section").style.display = "none";
   }
 }
