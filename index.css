@@ -1,3 +1,19 @@
+body {
+  background-color: white;
+}
+
+button {
+  border: 2px outset rgb(0, 0, 0);
+  border-radius: 2px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
 .todo-section {
   display: flex;
   flex-direction: column;
@@ -19,19 +35,37 @@
   flex-direction: column;
 }
 
-.todo-container,
-.input-todo > * {
+.todo-container {
+  display: flex;
+  /* justify-content: space-evenly; */
+  background-color: white;
   margin-top: 5px;
-  padding: 5px;
-  border: 1px solid black;
+  padding: 10px;
+  border: 2px outset rgb(236, 236, 236);
   border-radius: 5px;
 }
 
-.input-todo input {
-  flex: 3;
+.todo-container div:nth-child(1) {
+  flex: 0.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.input-todo button {
+.todo-container div:nth-child(2) {
+  flex: 2.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-todo {
+  /* margin-left: 3px; */
+  gap: 2px;
+}
+
+.input-todo input {
+  border-radius: 2px;
   flex: 1;
 }
 

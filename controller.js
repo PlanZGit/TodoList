@@ -4,6 +4,7 @@ const addToDo = () => {
   const date = document.getElementById("input-date");
   let isDone = false;
   createToDo(title.value, date.value);
+  title.value = "";
   render();
 };
 

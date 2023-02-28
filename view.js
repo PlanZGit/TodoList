@@ -11,10 +11,11 @@ function render() {
     checkBox.id = todo.id;
     checkBox.onchange = checkfunc;
     checkBox.checked = todo.isDone;
+    checkBox.style.margin = "0px";
 
     let editButton = document.createElement("button");
     editButton.innerText = "Edit";
-    editButton.style.marginLeft = "12px";
+    // editButton.style.marginLeft = "12px";
     editButton.id = todo.id;
     editButton.onclick = editButtonFunc;
 
@@ -25,11 +26,23 @@ function render() {
     deleteButton.innerText = "Delete";
     deleteButton.onclick = onDelete(todo);
     //deleteButton.id = todo.id
-    container.innerText = todo.title + " " + todo.date;
+    // container.innerText = todo.title + " " + todo.date;
 
-    container.appendChild(editButton);
-    container.prepend(checkBox);
-    container.appendChild(deleteButton);
+    todoCheckBoxContainter = document.createElement("div");
+    todoTitleContainter = document.createElement("div");
+    todoButtonContainter = document.createElement("div");
+
+    //add to did container
+    todoCheckBoxContainter.appendChild(checkBox);
+    todoTitleContainter.innerHTML = todo.title + " " + todo.date;
+
+    todoButtonContainter.appendChild(editButton);
+    todoButtonContainter.appendChild(deleteButton);
+
+    container.appendChild(todoTitleContainter);
+    container.appendChild(todoButtonContainter);
+    container.prepend(todoCheckBoxContainter);
+
     list.appendChild(container);
   });
 }
