@@ -48,3 +48,7 @@ const onDelete = (todoToDelete) => {
     render();
   };
 };
+
+const logList = () => {
+  console.log(todos);
+};

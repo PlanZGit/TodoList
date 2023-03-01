@@ -2,17 +2,9 @@
 
 Visit https://planzgit.github.io/TodoList/
 
-# Working on :
+1. Todo list save in localStorage
 
-1. Splite code into MVC - done
-
-2. Save and Load/Retrieve data - reviewing
-
-3. Selectable and draggable - searching
-
-4. Style - proccessing
-
-5. Adding JQuery - no
+2. HTTP Request CRUD - GET | POST | PUT | DELETE
 
 IMPORTANT :
 

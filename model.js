@@ -33,6 +33,15 @@ if (Array.isArray(savedTodos)) {
   ];
 }
 
+//Set Date
+let tDate = new Date();
+document.getElementById("input-date").value =
+  tDate.getFullYear() +
+  "-" +
+  (tDate.getMonth() + 1).toString().padStart(2, "0") +
+  "-" +
+  tDate.getDate().toString().padStart(2, "0");
+
 //Save todo
 function saveToDo() {
   //Save A string and associated with a key - localStorage.setItem('key','data');
@@ -99,13 +108,3 @@ function updateTodo(id, title, date) {
     }
   });
 }
-
-// set date to todays Date
-let tDate = new Date();
-
-document.getElementById("input-date").value =
-  tDate.getFullYear() +
-  "-" +
-  (tDate.getMonth() + 1).toString().padStart(2, "0") +
-  "-" +
-  tDate.getDate().toString().padStart(2, "0");
