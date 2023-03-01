@@ -1,5 +1,5 @@
 {
-  "posts": {
+  "Post": {
     "title": {
       "string": {}
     },
