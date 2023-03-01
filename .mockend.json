@@ -21,13 +21,13 @@
     "category": {
       "string": ["one", "two", "three"]
     },
-    "isDraft": {
+    "isDone": {
       "boolean": {}
     },
     "isEditing": {
       "boolean": {}
     },
-    "views": {
+    "id": {
       "int": {
         "min": 0,
         "max": 1000
