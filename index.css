@@ -7,6 +7,12 @@ button {
   border-radius: 2px;
 }
 
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
 input:focus,
 select:focus,
 textarea:focus,
@@ -20,27 +26,26 @@ button:focus {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  gap: 10px;
 }
 
 .todo-section > * {
-  width: 400px;
+  width: 350px;
 }
 
 .todoList-container {
   display: flex;
-  flex-direction: column;
+  gap: 10px;
 }
 
 .todo-container {
   display: flex;
-  /* justify-content: space-evenly; */
   background-color: white;
-  margin-top: 5px;
   padding: 10px;
-  border: 4px outset rgb(236, 236, 236);
-  border-left: 2px outset rgb(0, 0, 0);
-  border-bottom: 2px outset rgb(0, 0, 0);
   border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
+  transform: translate3d(0px, 0px, 0px);
+  cursor: grab;
 }
 
 .todo-container div:nth-child(1) {
@@ -69,7 +74,6 @@ button:focus {
 
 .input-todo {
   display: flex;
-  /* margin-left: 3px; */
   gap: 2px;
 }
 

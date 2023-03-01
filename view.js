@@ -5,6 +5,8 @@ function render() {
 
   //create
   let list = document.getElementById("todoList");
+  list.style.flexDirection = "column";
+
   todos.forEach((todo) => {
     let checkBox = document.createElement("input");
     checkBox.type = "checkbox";
@@ -30,12 +32,12 @@ function render() {
 
     todoCheckBoxContainter = document.createElement("div");
     todoTitleContainter = document.createElement("div");
+    todoTitleContainter.className = "prevent-select";
     todoButtonContainter = document.createElement("div");
 
     //add to did container
     todoCheckBoxContainter.appendChild(checkBox);
     todoTitleContainter.innerHTML = todo.title + " " + todo.date;
-
     todoButtonContainter.appendChild(editButton);
     todoButtonContainter.appendChild(deleteButton);
 
@@ -53,6 +55,7 @@ function render_isEditing(id) {
 
   //render isEditing
   let list = document.getElementById("todoList");
+  list.style.flexDirection = "row";
 
   let textInput = document.createElement("input");
   textInput.type = "text";

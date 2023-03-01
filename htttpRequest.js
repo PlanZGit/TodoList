@@ -1,6 +1,8 @@
 let todosData = [];
 
 const getData = () => {
+  document.getElementById("get-data").innerHTML = "";
+  document.getElementById("close-data-button").style.display = "block";
   axios
     .get("https://jsonplaceholder.typicode.com/todos")
     .then((response) => {
@@ -47,8 +49,6 @@ function createTableData(data) {
   });
 
   dataSection.append(table);
-  document.getElementById("get-data").innerHTML = "";
-  document.getElementById("close-data-button").style.display = "block";
 }
 
 function closeData() {

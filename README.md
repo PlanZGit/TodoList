@@ -12,6 +12,8 @@ Visit https://planzgit.github.io/TodoList/
 
 4. Style - proccessing
 
+5. Adding JQuery - no
+
 IMPORTANT :
 
     Todos data :
