@@ -24,6 +24,9 @@
     "isDraft": {
       "boolean": {}
     },
+    "isEditing": {
+      "boolean": {}
+    },
     "views": {
       "int": {
         "min": 0,

@@ -47,6 +47,7 @@ function render() {
 
     list.appendChild(container);
   });
+  console.log(todos);
 }
 
 function render_isEditing(id) {
