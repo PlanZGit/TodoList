@@ -12,8 +12,8 @@
 </head>
 
 <body>
-  <div style="font-size: 72px; text-align: center; position: fixed; top: 40px; right : 100px">Todo List</div>
-  <section style="position: fixed; top: 0px;">
+
+  <section style="position: fixed; top: 0px; z-index: 99;">
     <div id="get-data">
       Test CRUD API
       <button onclick=getAllData()>GET - All Data</button>
@@ -25,6 +25,7 @@
       <button id="close-data-button" onclick=closeData()>Close</button>
     </div>
     <div id="data-section"></div>
+    <div style="font-size: 72px; text-align: center; width:fit-content">Todo List</div>
   </section>
 
 
