@@ -4,7 +4,7 @@ const getData = () => {
   document.getElementById("get-data").innerHTML = "";
   document.getElementById("close-data-button").style.display = "block";
   axios
-    .get("https://jsonplaceholder.typicode.com/todos")
+    .get("https://mockend.com/org/repo/users")
     .then((response) => {
       todosData = response.data;
       todosData.length = 5; //limit to 10
