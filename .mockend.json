@@ -1,25 +1,7 @@
 {
   "todos": {
-    "id1": {
-      "title": "learn HTML",
-      "date": "09/30/2022",
-      "id": "id1",
-      "isDone": "false",
-      "isEditing": "undefined"
-    },
-    "id2": {
-      "title": "learn CSS",
-      "date": "09/30/2022",
-      "id": "id2",
-      "isDone": "true",
-      "isEditing": "undefined"
-    },
-    "id3": {
-      "title": "learn JavaScript",
-      "date": "09/30/2022",
-      "id": "id3",
-      "isDone": "false",
-      "isEditing": "undefined"
-    }
+    "id1": "learn HTML",
+    "id2": "learn CSS",
+    "id3": "learn JavaScript"
   }
 }
