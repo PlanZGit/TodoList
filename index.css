@@ -1,10 +1,23 @@
 body {
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 button {
-  border: 1px outset rgb(0, 0, 0);
-  border-radius: 2px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.185);
+  padding: 10px;
+  transition: 0.25s;
+}
+
+button:hover {
+  /* transform: translate3d(0px, 0px, 0px); */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px 0px;
+  z-index: 10;
+  transition: 0.25s;
 }
 
 .prevent-select {
@@ -30,7 +43,7 @@ button:focus {
 }
 
 .todo-section > * {
-  width: 350px;
+  width: 500px;
 }
 
 .todoList-container {
@@ -41,11 +54,21 @@ button:focus {
 .todo-container {
   display: flex;
   background-color: white;
-  padding: 10px;
+  padding: 20px;
   border-radius: 5px;
+
+  /* transform: translate3d(0px, 0px, 0px); */
+  cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
-  transform: translate3d(0px, 0px, 0px);
-  cursor: grab;
+  z-index: 1;
+  transition: 0.15s;
+}
+
+.todo-container:hover {
+  /* transform: translate3d(0px, 0px, 0px); */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 16px 32px 0px;
+  z-index: 10;
+  transition: 0.15s;
 }
 
 .todo-container div:nth-child(1) {
@@ -77,9 +100,11 @@ button:focus {
   gap: 2px;
 }
 
-.input-todo input {
-  border-radius: 2px;
+.input-todo input,
+input {
   flex: 1;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 table,

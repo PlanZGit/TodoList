@@ -8,13 +8,6 @@ const addToDo = () => {
   render();
 };
 
-// function deleteToDo(event) {
-//   const deletButton = event.target
-//   const idToDelete = deletButton.id
-//   removeTodo(idToDelete)
-//   render()
-// }
-
 function checkfunc(event) {
   // console.log(event)
   setCheckBox(event.target.id, event.target.checked);
@@ -49,6 +42,15 @@ const onDelete = (todoToDelete) => {
   };
 };
 
+//log todos
 const logList = () => {
   console.log(todos);
 };
+
+// Get the input field
+var input = document.getElementById("input-title");
+input.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    document.getElementById("press-me").click();
+  }
+});

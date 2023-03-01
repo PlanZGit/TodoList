@@ -12,17 +12,17 @@
 </head>
 
 <body>
-  <section style="position: fixed">
+  <section style="position: fixed; top: 0px; color: white;">
     <div id="get-data">
+      Test CRUD API
       <button onclick=getAllData()>GET - All Data</button>
       <button onclick=getData()>GET - Data 1</button>
       <button onclick=updateData()>PUT - Data 1</button>
       <button onclick=deleteData()>DELETE - Data 1</button>
       <button onclick=postData()>POST - TODOS</button>
       <button onclick=logList()>Log list</button>
-
+      <button id="close-data-button" onclick=closeData()>Close</button>
     </div>
-    <button id="close-data-button" onclick=closeData()>Close</button>
     <div id="data-section"></div>
   </section>
 
@@ -31,7 +31,7 @@
     <div class="input-todo">
       <input type="text" id="input-title" placeholder="Add a todo" />
       <input type="date" id="input-date" />
-      <button onclick=addToDo()>Press Me</button>
+      <button onclick=addToDo() id="press-me">Press Me</button>
     </div>
 
     <div id="todoList" class="todoList-container"></div>
