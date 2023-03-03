@@ -33,6 +33,10 @@ button:focus {
   outline: none;
 }
 
+#get-data {
+  display: none;
+}
+
 .todo-section {
   display: flex;
   flex-direction: column;

@@ -42,23 +42,18 @@ const onDelete = (todoToDelete) => {
   };
 };
 
-let dataSection = false;
 const closeAPI = () => {
   const button = document.getElementById("close-data-button");
   text = button.innerText;
 
   if ("Close" === text) {
-    // event.target.innerText = "Open";
     const apiButtons = document.getElementById("get-data");
     apiButtons.style.display = "none";
     button.innerText = "Open";
-    dataSection = true;
   } else {
-    // event.target.innerText = "Close";
     const apiButtons = document.getElementById("get-data");
     apiButtons.style.display = "block";
     button.innerText = "Close";
-    dataSection = false;
   }
 };
 
