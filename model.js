@@ -5,7 +5,7 @@ let todos;
 const savedTodos = JSON.parse(localStorage.getItem("todos"));
 
 //Check if array
-if (Array.isArray(savedTodos)) {
+if (Array.isArray(savedTodos) && savedTodos.length > 0) {
   todos = savedTodos;
 } else {
   todos = [
@@ -107,4 +107,5 @@ function updateTodo(id, title, date) {
       todo.date = date;
     }
   });
+  saveToDo();
 }

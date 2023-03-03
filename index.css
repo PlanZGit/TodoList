@@ -38,14 +38,33 @@ button:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   gap: 10px;
+}
+
+.todo-section > * {
+  width: 500px;
+}
+
+.input-todo {
+  display: flex;
+  gap: 2px;
+}
+
+.input-todo input,
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px inset rgba(0, 0, 0, 0.253);
+}
+
+#input-title {
+  flex: 2.5;
 }
 
 .todoList-container {
   display: flex;
   gap: 10px;
-  max-height: 45vh;
 }
 
 .todo-container {
@@ -53,7 +72,6 @@ button:focus {
   background-color: white;
   padding: 20px;
   border-radius: 5px;
-  width: 500px;
   /* transform: translate3d(0px, 0px, 0px); */
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
@@ -68,41 +86,23 @@ button:focus {
   transition: 0.15s;
 }
 
-.todo-container div:nth-child(1) {
-  flex: 0.2;
+.todo-selected {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 16px 32px 0px;
+  z-index: 10;
+  transition: 0.15s;
+}
+
+.todo-container div {
   display: flex;
+  flex: 1;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  gap: 2px;
 }
 
 .todo-container div:nth-child(2) {
-  flex: 2.4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.todo-container div:nth-child(3) {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 2px;
-}
-
-.input-todo {
-  display: flex;
-  gap: 2px;
-}
-
-.input-todo input,
-input {
-  flex: 1;
-  padding: 10px;
-  border-radius: 5px;
-  border: 2px inset rgba(0, 0, 0, 0.253);
+  flex: 10;
 }
 
 table,
