@@ -88,5 +88,5 @@
     "post": {
       "belongsTo": "Post"
     }
-  }
+  
 }
